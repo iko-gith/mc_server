@@ -1,5 +1,5 @@
 Version: NeoForge 1.21.1
-Server IP: 109.62.195.91
+Server IP: 100.96.64.110
 
 [Download Mods Link](https://drive.google.com/drive/folders/1da2X8r1abOFzkC4FKSMWQIlipmVjxn-C?usp=sharing)
 > **Note:** If you dont use modrinth, download proper Minecraft version and use mods.zip from the link to get needed mods.
