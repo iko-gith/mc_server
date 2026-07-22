@@ -156,16 +156,13 @@ const README_URL =
 
 async function loadReadme() {
     const readmeContent = document.getElementById("readme-content");
-
     try {
         const response = await fetch(README_URL);
-
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
         }
 
         const markdown = await response.text();
-
         readmeContent.innerHTML = DOMPurify.sanitize(
             marked.parse(markdown)
         );
@@ -174,10 +171,10 @@ async function loadReadme() {
             link.target = "_blank";
             link.rel = "noopener noreferrer";
         });
-
     } catch (error) {
         console.error("Failed to load README:", error);
-        readmeContent.textContent = "Unable to load README.md";
+        readmeContent.textContent =
+            "Unable to load README.md: " + error.message;
     }
 }
 
