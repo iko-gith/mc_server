@@ -24,11 +24,7 @@
 
     async function checkServerStatus() {
         try {
-            const response = await fetch(`https://mcsrvstat.us{serverIP}`, {
-                headers: {
-                    'User-Agent': 'GitHubPagesMinecraftStatusWidget/1.0'
-                }
-            });
+            const response = await fetch(`https://mcsrvstat.us{serverIP}`);
             
             if (!response.ok) throw new Error('API Error');
             const data = await response.json();
@@ -46,8 +42,9 @@
                 playersElement.textContent = "0 / 0";
             }
         } catch (error) {
-            document.getElementById('server-status').textContent = "Connection Error";
-            document.getElementById('server-status').className = "status offline";
+            statusElement = document.getElementById('server-status');
+            statusElement.textContent = "Offline";
+            statusElement.className = "status offline";
             console.error("API Error:", error);
         }
     }
