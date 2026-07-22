@@ -24,7 +24,7 @@
 
     async function checkServerStatus() {
         try {
-            const response = await fetch(`https://mcsrvstat.us{serverIP}`);
+            const response = await fetch(`https://mcsrvstat.us/server/{serverIP}`);
             const data = await response.json();
 
             const statusElement = document.getElementById('server-status');
