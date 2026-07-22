@@ -154,34 +154,31 @@ const GITHUB_REPOSITORY = "mc_server";
 const README_URL =
     `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/main/README.md`;
 
-
 async function loadReadme() {
-    const readmeContent =
-        document.getElementById("readme-content");
+    const readmeContent = document.getElementById("readme-content");
 
     try {
-        const response =
-            await fetch(README_URL);
+        const response = await fetch(README_URL);
+
         if (!response.ok) {
-            throw new Error("Failed to load README");
+            throw new Error(`HTTP error: ${response.status}`);
         }
 
-        const markdown =
-            await response.text();
-        readmeContent.innerHTML =
-            convertMarkdownToHtml(markdown);
-        readmeContainer.querySelectorAll("a").forEach(link => {
+        const markdown = await response.text();
+
+        readmeContent.innerHTML = convertMarkdownToHtml(markdown);
+
+        readmeContent.querySelectorAll("a").forEach(link => {
             link.target = "_blank";
             link.rel = "noopener noreferrer";
         });
 
     } catch (error) {
-        console.error(error);
-        readmeContent.textContent =
-            "Unable to load README.md";
+        console.error("Failed to load README:", error);
+
+        readmeContent.textContent = "Unable to load README.md";
     }
 }
-
 
 function convertMarkdownToHtml(markdown) {
     return markdown
@@ -200,6 +197,5 @@ function convertMarkdownToHtml(markdown) {
         .replace(/`(.*?)`/gim, "<code>$1</code>")
         .replace(/\n/gim, "<br>");
 }
-
 
 loadReadme();
