@@ -19,12 +19,10 @@ document.getElementById("server-address").textContent =
 
 
 async function loadServerStatus() {
-
     serverStatus.textContent = "Loading...";
     serverStatus.className = "";
 
     try {
-
         const response = await fetch(API_URL);
 
         if (!response.ok) {
@@ -36,7 +34,6 @@ async function loadServerStatus() {
         updateServerInfo(data);
 
     } catch (error) {
-
         console.error(error);
 
         serverStatus.textContent = "Error";
@@ -52,9 +49,7 @@ async function loadServerStatus() {
 
 
 function updateServerInfo(data) {
-
     if (!data.online) {
-
         serverStatus.textContent = "Offline";
         serverStatus.className = "offline";
 
@@ -78,26 +73,19 @@ function updateServerInfo(data) {
 
     const onlinePlayers =
         data.players?.online ?? 0;
-
     const maxPlayers =
         data.players?.max ?? 0;
 
 
     playerCount.textContent =
         `${onlinePlayers} / ${maxPlayers}`;
-
-
     serverVersion.textContent =
         data.version ?? "Unknown";
 
-
     if (data.motd && data.motd.clean) {
-
         serverMotd.textContent =
             data.motd.clean.join(" ");
-
     } else {
-
         serverMotd.textContent =
             "No MOTD available.";
     }
@@ -107,11 +95,8 @@ function updateServerInfo(data) {
 
 
     if (data.icon) {
-
         serverIcon.src = data.icon;
-
     } else {
-
         serverIcon.style.display = "none";
     }
 
@@ -122,12 +107,10 @@ function updateServerInfo(data) {
 
 
 function updatePlayers(players) {
-
     playersList.innerHTML = "";
 
 
     if (players.length === 0) {
-
         playersList.textContent =
             "No players online.";
 
@@ -163,3 +146,49 @@ setInterval(
     loadServerStatus,
     5 * 60 * 1000
 );
+
+
+const GITHUB_USERNAME = "iko-gith";
+const GITHUB_REPOSITORY = "mc_server";
+
+const README_URL =
+    `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/main/README.md`;
+
+
+async function loadReadme() {
+    const readmeContent =
+        document.getElementById("readme-content");
+
+    try {
+        const response =
+            await fetch(README_URL);
+        if (!response.ok) {
+            throw new Error("Failed to load README");
+        }
+
+        const markdown =
+            await response.text();
+        readmeContent.innerHTML =
+            convertMarkdownToHtml(markdown);
+
+    } catch (error) {
+        console.error(error);
+        readmeContent.textContent =
+            "Unable to load README.md";
+    }
+}
+
+
+function convertMarkdownToHtml(markdown) {
+    return markdown
+        .replace(/^### (.*$)/gim, "<h3>$1</h3>")
+        .replace(/^## (.*$)/gim, "<h2>$1</h2>")
+        .replace(/^# (.*$)/gim, "<h1>$1</h1>")
+        .replace(/\*\*(.*?)\*\*/gim, "<strong>$1</strong>")
+        .replace(/\*(.*?)\*/gim, "<em>$1</em>")
+        .replace(/`(.*?)`/gim, "<code>$1</code>")
+        .replace(/\n/gim, "<br>");
+}
+
+
+loadReadme();
