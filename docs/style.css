@@ -131,3 +131,37 @@ button {
 button:hover {
     background: #2563eb;
 }
+
+.readme-card {
+    margin-top: 20px;
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border-radius: 10px;
+
+    line-height: 1.6;
+
+    text-align: left;
+}
+
+.readme-card h1,
+.readme-card h2,
+.readme-card h3 {
+    margin-top: 20px;
+}
+
+.readme-card h1:first-child,
+.readme-card h2:first-child {
+    margin-top: 0;
+}
+
+.readme-card code {
+    padding: 3px 6px;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    border-radius: 4px;
+
+    font-family: monospace;
+}
