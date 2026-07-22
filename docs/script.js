@@ -170,6 +170,10 @@ async function loadReadme() {
             await response.text();
         readmeContent.innerHTML =
             convertMarkdownToHtml(markdown);
+        readmeContainer.querySelectorAll("a").forEach(link => {
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+        });
 
     } catch (error) {
         console.error(error);
