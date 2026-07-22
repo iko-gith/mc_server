@@ -13,7 +13,6 @@ Server IP: 5.143.129.175
 * AmbientSounds
 * Chat Animation [Smooth Chat]
 * Entity Culling
-* Inventory Profiles Next
 * Iris Shaders
 * Just Enough Items (JEI)
 * libIPN
