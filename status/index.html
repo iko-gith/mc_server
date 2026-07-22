@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minecraft Server Status</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="server-header">
+            <img id="server-icon" src="" alt="Server Icon">
+
+            <div>
+                <h1>My Minecraft Server</h1>
+                <p id="server-address">play.example.com</p>
+            </div>
+        </header>
+
+        <section class="status-card">
+
+            <div class="status-row">
+                <span>Status</span>
+                <strong id="server-status">Loading...</strong>
+            </div>
+
+            <div class="status-row">
+                <span>Players</span>
+                <strong id="player-count">- / -</strong>
+            </div>
+
+            <div class="status-row">
+                <span>Version</span>
+                <strong id="server-version">-</strong>
+            </div>
+
+        </section>
+
+        <section class="motd-card">
+            <h2>Server MOTD</h2>
+            <p id="server-motd">Loading...</p>
+        </section>
+
+        <section class="players-card">
+            <h2>Online Players</h2>
+
+            <div id="players-list">
+                Loading...
+            </div>
+        </section>
+
+        <p id="last-updated"></p>
+
+        <button id="refresh-button">
+            Refresh
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
