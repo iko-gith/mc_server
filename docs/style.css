@@ -165,3 +165,81 @@ button:hover {
 
     font-family: monospace;
 }
+
+.readme-section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #181818;
+    border-radius: 12px;
+    color: #e0e0e0;
+}
+
+#readme-content {
+    line-height: 1.6;
+}
+
+#readme-content h1,
+#readme-content h2,
+#readme-content h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+}
+
+#readme-content h1 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+#readme-content h2 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 6px;
+}
+
+#readme-content a {
+    color: #6cb6ff;
+}
+
+#readme-content code {
+    padding: 3px 6px;
+    background: #252525;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+#readme-content pre {
+    padding: 15px;
+    overflow-x: auto;
+    background: #101010;
+    border-radius: 8px;
+}
+
+#readme-content pre code {
+    padding: 0;
+    background: transparent;
+}
+
+#readme-content blockquote {
+    margin-left: 0;
+    padding-left: 15px;
+    border-left: 4px solid #555;
+    color: #aaa;
+}
+
+#readme-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+#readme-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#readme-content th,
+#readme-content td {
+    padding: 8px 12px;
+    border: 1px solid #444;
+    text-align: left;
+}
