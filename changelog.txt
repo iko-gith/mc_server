@@ -1,12 +1,18 @@
+23.07.2026:
+- Added new mods:
+* GraveStone Mod -/- modrinth.com/mod/gravestone-mod
+- Set view-distance: 10->12
+- Set simulation-distance: 10->12
+
 22.07.2026:
 > Note: Client mods are not server mods, it can be installed again, if needed.
 - Removed mods:
-Inventory Profiles Next (Might be annoying for new players, CLIENT)
+* Inventory Profiles Next -/- modrinth.com/mod/inventory-profiles-next
 
 21.07.2026:
 - Added new mods:
-Etched
-Create: Tracks+
+* Etched          -/- modrinth.com/mod/etched
+* Create: Tracks+ -/- modrinth.com/mod/create-tracks+
 
 20.07.2026:
 - Created modpack
