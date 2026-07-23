@@ -66,6 +66,7 @@ Server IP: 5.143.129.175
 * Farmer's Delight
 * Fusion (Connected Textures)
 * Fzzy Config
+* GraveStone Mod
 * Icarus
 * Immersive Paintings
 * Kotlin for Forge
