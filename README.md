@@ -15,7 +15,6 @@ Server IP: 5.143.129.175
 * Entity Culling
 * Iris Shaders
 * Just Enough Items (JEI)
-* libIPN
 * Shulker Box Tooltip
 * SkinChanger
 * Sodium
