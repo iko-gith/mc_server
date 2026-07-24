@@ -321,15 +321,26 @@ button:hover {
 
 #changelog-content h3 {
     margin-top: 20px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 #changelog-content h3:first-child {
     margin-top: 0;
 }
 
-#changelog-content ul {
+#changelog-content ul,
+#changelog-content p,
+#changelog-content blockquote {
     margin-top: 0;
+    margin-bottom: 16px;
+}
+
+#changelog-content a {
+    color: #6cb6ff;
+}
+
+#changelog-content a:visited {
+    color: #a78bfa;
 }
 
 #reveal-readme-button,
