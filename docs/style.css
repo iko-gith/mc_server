@@ -298,7 +298,6 @@ button:hover {
     max-height: 180px;
     overflow: hidden;
     position: relative;
-    white-space: pre-wrap;
 }
 
 #changelog-content.revealed {
