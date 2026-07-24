@@ -245,7 +245,7 @@ button:hover {
 }
 
 #readme-content {
-    max-height: 180px;
+    max-height: 160px;
     overflow: hidden;
     position: relative;
 }
