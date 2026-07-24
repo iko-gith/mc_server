@@ -159,7 +159,9 @@ async function loadReadme() {
         document.getElementById("readme-content");
 
     const revealButton =
-        document.getElementById("reveal-readme-button");
+        document.getElementById(
+            "reveal-readme-button"
+        );
 
     try {
         const response =
@@ -187,41 +189,18 @@ async function loadReadme() {
                     "noopener noreferrer";
             });
 
-        const readmeElements =
-            Array.from(
-                readmeContent.children
-            );
+        revealButton.hidden = false;
 
-        const visibleElements = 3;
+        revealButton.addEventListener(
+            "click",
+            () => {
+                readmeContent.classList.add(
+                    "revealed"
+                );
 
-        if (
-            readmeElements.length >
-            visibleElements
-        ) {
-            readmeElements
-                .slice(visibleElements)
-                .forEach(element => {
-                    element.classList.add(
-                        "readme-hidden"
-                    );
-                });
-
-            revealButton.hidden = false;
-
-            revealButton.addEventListener(
-                "click",
-                () => {
-                    readmeElements
-                        .forEach(element => {
-                            element.classList.remove(
-                                "readme-hidden"
-                            );
-                        });
-
-                    revealButton.remove();
-                }
-            );
-        }
+                revealButton.remove();
+            }
+        );
 
     } catch (error) {
         console.error(
