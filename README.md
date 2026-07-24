@@ -55,6 +55,7 @@ Server IP: 5.143.129.175
 * Create: Interiors
 * Create: Storage [Neo/Forge]
 * Create: Tracks+
+* Create Recycling V2
 * CreativeCore
 * Curios API
 * Diagonal Fences
@@ -70,6 +71,7 @@ Server IP: 5.143.129.175
 * Immersive Paintings
 * Kotlin for Forge
 * Lithium
+* LDLib
 * Moonlight Lib
 * oωo (owo-lib)
 * Plushie Buddies
@@ -79,6 +81,8 @@ Server IP: 5.143.129.175
 * Resourceful Config
 * Ritchie's Projectile Library
 * Sable
+* Synaxis
+* Sable Schematic Tool
 * Simple Voice Chat
 * Sparkweave Engine
 * Spawn
