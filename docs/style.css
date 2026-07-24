@@ -271,7 +271,7 @@ button:hover {
     pointer-events: none;
     background: linear-gradient(
         transparent,
-        var(--card-bg)
+        #1c1c1c
     );
 }
 
