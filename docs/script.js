@@ -247,8 +247,8 @@ async function loadChangelog() {
             revealButton.hidden = false;
 
             revealButton.addEventListener("click", () => {
-                changelogContent.textContent =
-                    marked.parse(firstEntry) + marked.parse(remainingEntries);
+                changelogContent.innerHTML =
+                    DOMPurify.sanitize(marked.parse(firstEntry) + marked.parse(remainingEntries));
 
                 changelogContent.classList.add("revealed");
 
