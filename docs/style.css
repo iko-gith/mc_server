@@ -271,7 +271,7 @@ button:hover {
     pointer-events: none;
     background: linear-gradient(
         transparent,
-        #1c1c1c
+        rgba(20, 20, 20, 0.9)
     );
 }
 
