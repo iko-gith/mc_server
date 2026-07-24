@@ -275,3 +275,57 @@ button:hover {
 #reveal-readme-button {
     margin-top: 20px;
 }
+
+.information-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.readme-section,
+.changelog-section {
+    min-width: 0;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.readme-section h2,
+.changelog-section h2 {
+    margin-top: 0;
+}
+
+#readme-content {
+    max-height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+#readme-content.revealed {
+    max-height: none;
+}
+
+#changelog-content {
+    max-height: 180px;
+    overflow: hidden;
+    position: relative;
+    white-space: pre-wrap;
+}
+
+#changelog-content.revealed {
+    max-height: none;
+}
+
+#reveal-readme-button,
+#reveal-changelog-button {
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .information-grid {
+        grid-template-columns: 1fr;
+    }
+}
