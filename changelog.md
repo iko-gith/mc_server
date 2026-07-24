@@ -1,5 +1,7 @@
 ## 24.07.2026
 * Added mods: [Create Recycling V2](https://modrinth.com/mod/createrecyclingv2), [LDLib](https://modrinth.com/mod/ldlib), [Synaxis](https://modrinth.com/mod/synaxis), [Sable Schematic Tool](https://modrinth.com/mod/sable-schematic-tool)
+* `view-distance`: `12 → 10`
+* `simulation-distance`: `12 → 10`
 
 ## 23.07.2026
 * Added mod: [GraveStone Mod](https://modrinth.com/mod/gravestone-mod)
