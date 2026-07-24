@@ -244,7 +244,31 @@ button:hover {
     text-align: left;
 }
 
-.readme-hidden {
+#readme-content {
+    max-height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+#readme-content::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    pointer-events: none;
+    background: linear-gradient(
+        transparent,
+        var(--card-bg)
+    );
+}
+
+#readme-content.revealed {
+    max-height: none;
+}
+
+#readme-content.revealed::after {
     display: none;
 }
 
