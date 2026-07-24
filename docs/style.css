@@ -132,6 +132,11 @@ button:hover {
     background: #2563eb;
 }
 
+.wide-section {
+    width: min(900px, 90%);
+    margin: 0 auto 60px;
+}
+
 .readme-card {
     margin-top: 20px;
     padding: 25px;
