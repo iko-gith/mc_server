@@ -143,49 +143,6 @@ button:hover {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
-.readme-card {
-    margin-top: 20px;
-    padding: 25px;
-
-    background: rgba(255, 255, 255, 0.05);
-
-    border-radius: 10px;
-
-    line-height: 1.6;
-
-    text-align: left;
-}
-
-.readme-card h1,
-.readme-card h2,
-.readme-card h3 {
-    margin-top: 20px;
-}
-
-.readme-card h1:first-child,
-.readme-card h2:first-child {
-    margin-top: 0;
-}
-
-.readme-card code {
-    padding: 3px 6px;
-
-    background: rgba(0, 0, 0, 0.4);
-
-    border-radius: 4px;
-
-    font-family: monospace;
-}
-
-.readme-section {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 30px;
-    background: #181818;
-    border-radius: 12px;
-    color: #e0e0e0;
-}
-
 #readme-content {
     line-height: 1.6;
 }
@@ -280,6 +237,24 @@ button:hover {
 }
 
 #readme-content.revealed::after {
+    display: none;
+}
+
+#changelog-content::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    pointer-events: none;
+    background: linear-gradient(
+        transparent,
+        rgba(20, 20, 20, 0.9)
+    );
+}
+
+#changelog-content.revealed::after {
     display: none;
 }
 
