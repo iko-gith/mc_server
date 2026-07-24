@@ -215,3 +215,53 @@ async function loadReadme() {
 }
 
 loadReadme();
+
+const CHANGELOG_URL =
+    "https://raw.githubusercontent.com/iko-gith/mc_server/main/changelog.txt";
+
+async function loadChangelog() {
+    const changelogContent =
+        document.getElementById("changelog-content");
+
+    const revealButton =
+        document.getElementById("reveal-changelog-button");
+
+    try {
+        const response = await fetch(CHANGELOG_URL);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+
+        const changelog = await response.text();
+        const entries = changelog.split(
+            /(?=\d{2}\.\d{2}\.\d{4}:)/
+        );
+
+        const firstEntry = entries[0];
+        const remainingEntries = entries.slice(1).join("");
+
+        changelogContent.textContent = firstEntry;
+
+        if (remainingEntries.trim() !== "") {
+            revealButton.hidden = false;
+
+            revealButton.addEventListener("click", () => {
+                changelogContent.textContent =
+                    firstEntry + remainingEntries;
+
+                changelogContent.classList.add("revealed");
+
+                revealButton.remove();
+            });
+        }
+
+    } catch (error) {
+        console.error("Failed to load changelog:", error);
+
+        changelogContent.textContent =
+            "Unable to load changelog.txt: " + error.message;
+    }
+}
+
+loadChangelog();
