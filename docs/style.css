@@ -319,6 +319,19 @@ button:hover {
     max-height: none;
 }
 
+#changelog-content h3 {
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+#changelog-content h3:first-child {
+    margin-top: 0;
+}
+
+#changelog-content ul {
+    margin-top: 0;
+}
+
 #reveal-readme-button,
 #reveal-changelog-button {
     margin-top: 20px;
