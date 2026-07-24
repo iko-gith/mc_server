@@ -222,42 +222,49 @@ const CHANGELOG_URL =
 async function loadChangelog() {
     const changelogContent =
         document.getElementById("changelog-content");
-
     const revealButton =
-        document.getElementById("reveal-changelog-button");
-
-    try {
-        const response = await fetch(CHANGELOG_URL);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error: ${response.status}`);
-        }
-
-        const changelog = await response.text();
-        const entries = changelog.split(
-            /(?=^## \d{2}\.\d{2}\.\d{4}\s*$)/m
+        document.getElementById(
+            "reveal-changelog-button"
         );
-
-        const firstEntry = entries[0];
-        const remainingEntries = entries.slice(1).join("");
-
-        changelogContent.innerHTML = marked.parse(firstEntry);
-
-        if (remainingEntries.trim() !== "") {
-            revealButton.hidden = false;
-
-            revealButton.addEventListener("click", () => {
-                changelogContent.innerHTML = marked.parse(changelog)
-                changelogContent.classList.add("revealed");
-                revealButton.remove();
-            });
+    try {
+        const response =
+            await fetch(CHANGELOG_URL);
+        if (!response.ok) {
+            throw new Error(
+                `HTTP error: ${response.status}`
+            );
         }
-
+        const markdown =
+            await response.text();
+        changelogContent.innerHTML =
+            DOMPurify.sanitize(
+                marked.parse(markdown)
+            );
+        changelogContent
+            .querySelectorAll("a")
+            .forEach(link => {
+                link.target = "_blank";
+                link.rel =
+                    "noopener noreferrer";
+            });
+        revealButton.hidden = false;
+        revealButton.addEventListener(
+            "click",
+            () => {
+                changelogContent.classList.add(
+                    "revealed"
+                );
+                revealButton.remove();
+            }
+        );
     } catch (error) {
-        console.error("Failed to load changelog:", error);
-
+        console.error(
+            "Failed to load changelog:",
+            error
+        );
         changelogContent.textContent =
-            "Unable to load changelog.txt: " + error.message;
+            "Unable to load changelog.md: " +
+            error.message;
     }
 }
 
