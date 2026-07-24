@@ -243,3 +243,11 @@ button:hover {
     border: 1px solid #444;
     text-align: left;
 }
+
+.readme-hidden {
+    display: none;
+}
+
+#reveal-readme-button {
+    margin-top: 20px;
+}
