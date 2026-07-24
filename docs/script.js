@@ -235,7 +235,7 @@ async function loadChangelog() {
 
         const changelog = await response.text();
         const entries = changelog.split(
-            /(?=^### \d{2}\.\d{2}\.\d{4}\s*$)/m
+            /(?=^## \d{2}\.\d{2}\.\d{4}\s*$)/m
         );
 
         const firstEntry = entries[0];
