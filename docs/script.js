@@ -247,11 +247,8 @@ async function loadChangelog() {
             revealButton.hidden = false;
 
             revealButton.addEventListener("click", () => {
-                changelogContent.innerHTML =
-                    DOMPurify.sanitize(marked.parse(firstEntry) + marked.parse(remainingEntries));
-
+                changelogContent.innerHTML = marked.parse(changelog)
                 changelogContent.classList.add("revealed");
-
                 revealButton.remove();
             });
         }
