@@ -49,25 +49,25 @@
         <p id="last-updated"></p>
 
         <button id="refresh-button">Refresh</button>
-        <section class="readme-card">
-            <div id="readme-content">Loading README...</div>
+        <div class="information-grid">
+            <section class="readme-section">
+                <h2>Information</h2>
+                <div id="readme-content">Loading Information...</div>
+            
+                <button id="reveal-readme-button" hidden>
+                    Reveal
+                </button>
+            </section>
         
-            <button id="reveal-readme-button" hidden>
-                Reveal
-            </button>
-        </section>
-    
-        <section class="changelog-section">
-            <h2>Changelog</h2>
-    
-            <div id="changelog-content">
-                Loading changelog...
-            </div>
-    
-            <button id="reveal-changelog-button" hidden>
-                Reveal
-            </button>
-        </section>
+            <section class="changelog-section">
+                <h2>Changelog</h2>
+                <div id="changelog-content">Loading Changelog...</div>
+        
+                <button id="reveal-changelog-button" hidden>
+                    Reveal
+                </button>
+            </section>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
