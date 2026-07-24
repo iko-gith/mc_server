@@ -217,7 +217,7 @@ async function loadReadme() {
 loadReadme();
 
 const CHANGELOG_URL =
-    "https://raw.githubusercontent.com/iko-gith/mc_server/main/changelog.txt";
+    "https://raw.githubusercontent.com/iko-gith/mc_server/main/changelog.md";
 
 async function loadChangelog() {
     const changelogContent =
@@ -235,20 +235,20 @@ async function loadChangelog() {
 
         const changelog = await response.text();
         const entries = changelog.split(
-            /(?=\d{2}\.\d{2}\.\d{4}:)/
+            /(?=^## \d{2}\.\d{2}\.\d{4}\s*$)/m
         );
 
         const firstEntry = entries[0];
         const remainingEntries = entries.slice(1).join("");
 
-        changelogContent.textContent = firstEntry;
+        changelogContent.innerHTML = marked.parse(firstEntry);
 
         if (remainingEntries.trim() !== "") {
             revealButton.hidden = false;
 
             revealButton.addEventListener("click", () => {
                 changelogContent.textContent =
-                    firstEntry + remainingEntries;
+                    marked.parse(firstEntry) + marked.parse(remainingEntries);
 
                 changelogContent.classList.add("revealed");
 
