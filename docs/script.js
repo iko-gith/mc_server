@@ -1,4 +1,4 @@
-const SERVER_ADDRESS = "85.174.249.145";
+const SERVER_ADDRESS = "ikos-minecraft-server.duckdns.org";
 
 const API_URL =
     `https://api.mcsrvstat.us/3/${SERVER_ADDRESS}`;
