@@ -1,22 +1,13 @@
-const SERVER_ADDRESS = "85.174.249.145";
-
-const API_URL =
-    `https://api.mcsrvstat.us/3/${SERVER_ADDRESS}`;
-
+const API_URL = "http://85.174.249.145:3000/api/status";
 
 const serverStatus = document.getElementById("server-status");
 const playerCount = document.getElementById("player-count");
 const serverVersion = document.getElementById("server-version");
 const serverMotd = document.getElementById("server-motd");
-const serverIcon = document.getElementById("server-icon");
 const playersList = document.getElementById("players-list");
 const lastUpdated = document.getElementById("last-updated");
 const refreshButton = document.getElementById("refresh-button");
-
-
-document.getElementById("server-address").textContent =
-    SERVER_ADDRESS;
-
+const serverAddress = document.getElementById("server-address");
 
 async function loadServerStatus() {
     serverStatus.textContent = "Loading...";
@@ -34,27 +25,30 @@ async function loadServerStatus() {
         updateServerInfo(data);
 
     } catch (error) {
-        console.error(error);
+        console.error("Failed to load server status:", error);
 
         serverStatus.textContent = "Error";
         serverStatus.className = "offline";
 
         playerCount.textContent = "- / -";
         serverVersion.textContent = "-";
-        serverMotd.textContent = "Unable to load server information.";
+        serverMotd.textContent =
+            "Unable to load server information.";
 
-        playersList.textContent = "Unable to load players.";
+        playersList.textContent =
+            "Unable to load players.";
     }
 }
 
-
 function updateServerInfo(data) {
+    serverAddress.textContent =
+        data.address ?? "Unknown";
+
     if (!data.online) {
         serverStatus.textContent = "Offline";
         serverStatus.className = "offline";
 
         playerCount.textContent = "0 / 0";
-
         serverVersion.textContent = "-";
 
         serverMotd.textContent =
@@ -63,52 +57,40 @@ function updateServerInfo(data) {
         playersList.textContent =
             "No players online.";
 
+        lastUpdated.textContent =
+            `Last updated: ${new Date().toLocaleTimeString()}`;
+
         return;
     }
-
 
     serverStatus.textContent = "Online";
     serverStatus.className = "online";
 
-
     const onlinePlayers =
         data.players?.online ?? 0;
+
     const maxPlayers =
         data.players?.max ?? 0;
 
-
     playerCount.textContent =
         `${onlinePlayers} / ${maxPlayers}`;
+
     serverVersion.textContent =
         data.version ?? "Unknown";
 
-    if (data.motd && data.motd.clean) {
-        serverMotd.textContent =
-            data.motd.clean.join(" ");
-    } else {
-        serverMotd.textContent =
-            "No MOTD available.";
-    }
+    serverMotd.textContent =
+        data.motd ?? "No MOTD available.";
 
-
-    updatePlayers(data.players?.list ?? []);
-
-
-    if (data.icon) {
-        serverIcon.src = data.icon;
-    } else {
-        serverIcon.style.display = "none";
-    }
-
+    updatePlayers(
+        data.players?.names ?? []
+    );
 
     lastUpdated.textContent =
         `Last updated: ${new Date().toLocaleTimeString()}`;
 }
 
-
 function updatePlayers(players) {
     playersList.innerHTML = "";
-
 
     if (players.length === 0) {
         playersList.textContent =
@@ -117,155 +99,29 @@ function updatePlayers(players) {
         return;
     }
 
-
-    players.forEach(player => {
-
+    players.forEach(name => {
         const playerElement =
             document.createElement("div");
 
-        playerElement.className = "player";
+        playerElement.className =
+            "player";
 
         playerElement.textContent =
-            player.name;
+            name;
 
-        playersList.appendChild(playerElement);
+        playersList.appendChild(
+            playerElement
+        );
     });
 }
-
 
 refreshButton.addEventListener(
     "click",
     loadServerStatus
 );
 
-
 loadServerStatus();
-
-
 setInterval(
     loadServerStatus,
     5 * 60 * 1000
 );
-
-
-const GITHUB_USERNAME = "iko-gith";
-const GITHUB_REPOSITORY = "mc_server";
-
-const README_URL =
-    `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${GITHUB_REPOSITORY}/main/README.md`;
-
-async function loadReadme() {
-    const readmeContent =
-        document.getElementById("readme-content");
-
-    const revealButton =
-        document.getElementById(
-            "reveal-readme-button"
-        );
-
-    try {
-        const response =
-            await fetch(README_URL);
-
-        if (!response.ok) {
-            throw new Error(
-                `HTTP error: ${response.status}`
-            );
-        }
-
-        const markdown =
-            await response.text();
-
-        readmeContent.innerHTML =
-            DOMPurify.sanitize(
-                marked.parse(markdown)
-            );
-
-        readmeContent
-            .querySelectorAll("a")
-            .forEach(link => {
-                link.target = "_blank";
-                link.rel =
-                    "noopener noreferrer";
-            });
-
-        revealButton.hidden = false;
-
-        revealButton.addEventListener(
-            "click",
-            () => {
-                readmeContent.classList.add(
-                    "revealed"
-                );
-
-                revealButton.remove();
-            }
-        );
-
-    } catch (error) {
-        console.error(
-            "Failed to load README:",
-            error
-        );
-
-        readmeContent.textContent =
-            "Unable to load README.md: " +
-            error.message;
-    }
-}
-
-loadReadme();
-
-const CHANGELOG_URL =
-    "https://raw.githubusercontent.com/iko-gith/mc_server/main/changelog.md";
-
-async function loadChangelog() {
-    const changelogContent =
-        document.getElementById("changelog-content");
-    const revealButton =
-        document.getElementById(
-            "reveal-changelog-button"
-        );
-    try {
-        const response =
-            await fetch(CHANGELOG_URL);
-        if (!response.ok) {
-            throw new Error(
-                `HTTP error: ${response.status}`
-            );
-        }
-        const markdown =
-            await response.text();
-        changelogContent.innerHTML =
-            DOMPurify.sanitize(
-                marked.parse(markdown)
-            );
-        changelogContent
-            .querySelectorAll("a")
-            .forEach(link => {
-                link.target = "_blank";
-                link.rel =
-                    "noopener noreferrer";
-            });
-        revealButton.hidden = false;
-        revealButton.addEventListener(
-            "click",
-            () => {
-                changelogContent.classList.add(
-                    "revealed"
-                );
-                revealButton.remove();
-            }
-        );
-    } catch (error) {
-        console.error(
-            "Failed to load changelog:",
-            error
-        );
-        changelogContent.textContent =
-            "Unable to load changelog.md: " +
-            error.message;
-    }
-}
-
-loadChangelog();
