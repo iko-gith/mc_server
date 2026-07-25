@@ -1,4 +1,4 @@
-const SERVER_ADDRESS = "5.143.129.175";
+const SERVER_ADDRESS = "85.174.249.145";
 
 const API_URL =
     `https://api.mcsrvstat.us/3/${SERVER_ADDRESS}`;
