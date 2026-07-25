@@ -58,6 +58,9 @@ function updateServerInfo(data) {
         return;
     }
 
+    serverAddress.textContent =
+        `${SERVER_ADDRESS} / ${data.ip}`;
+
     serverStatus.textContent = "Online";
     serverStatus.className = "online";
 
@@ -103,6 +106,9 @@ function showOfflineServer() {
 }
 
 function showServerError() {
+    serverAddress.textContent =
+        `${SERVER_ADDRESS}`;
+    
     serverStatus.textContent = "Error";
     serverStatus.className = "offline";
 
