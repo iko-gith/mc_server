@@ -34,11 +34,14 @@ Version: NeoForge 1.21.1
 * Brewin' And Chewin'
 * Butchercraft
 * Caelus API
+* Carry On
+* CraftTweaker
 * Clumps
 * Common Network
 * Connected Glass
 * Create
 * Create Aeronautics
+* Create Aeronautics: Transmission & Linkage
 * Create Big Cannons
 * Create Crafts & Additions
 * Create Deco
@@ -55,7 +58,10 @@ Version: NeoForge 1.21.1
 * Create: Storage [Neo/Forge]
 * Create: Tracks+
 * Create Recycling V2
+* Create: Ultimate Factory
+* Create: Aeroworks
 * CreativeCore
+* Customizable Player Models
 * Curios API
 * Diagonal Fences
 * Dynamic Trees
@@ -90,4 +96,8 @@ Version: NeoForge 1.21.1
 * SuperMartijn642's Config Lib
 * SuperMartijn642's Core Lib
 * Trash Cans
+* TACZ Aeronautic Compat
 * Visual Vibrance
+* VisualWorkbench
+* ViveCraft
+* ViveCraft Compat
