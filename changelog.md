@@ -1,5 +1,22 @@
+## 26.07.2026
+* Added mods:
+- [CraftTweaker](https://modrinth.com/mod/crafttweaker)
+- [VisualWorkbench](https://modrinth.com/mod/visual-workbench)
+- [ViveCraft](https://modrinth.com/mod/vivecraft)
+- [ViveCraft Compat](https://modrinth.com/mod/vivecraft-compat)
+- [Customizable Player Models](https://modrinth.com/plugin/custom-player-models)
+- [TACZ Aeronautic Compat](https://modrinth.com/mod/tacz-aeronautics-compat)
+- [Create: Ultimate Factory](https://modrinth.com/mod/create-ultimate-factory)
+- [Create: Aeroworks](https://modrinth.com/mod/create-aeroworks)
+- [Create Aeronautics: Transmission & Linkage](https://modrinth.com/mod/create-aeronautics-transmission-linkage)
+- [Carry On](https://modrinth.com/mod/carry-on)
+
 ## 24.07.2026
-* Added mods: [Create Recycling V2](https://modrinth.com/mod/createrecyclingv2), [LDLib](https://modrinth.com/mod/ldlib), [Synaxis](https://modrinth.com/mod/synaxis), [Sable Schematic Tool](https://modrinth.com/mod/sable-schematic-tool)
+* Added mods:
+- [Create Recycling V2](https://modrinth.com/mod/createrecyclingv2)
+- [LDLib](https://modrinth.com/mod/ldlib)
+- [Synaxis](https://modrinth.com/mod/synaxis)
+- [Sable Schematic Tool](https://modrinth.com/mod/sable-schematic-tool)
 * `view-distance`: `12 → 10`
 * `simulation-distance`: `12 → 10`
 
