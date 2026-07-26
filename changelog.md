@@ -1,4 +1,5 @@
 ## 26.07.2026
+* `allow-flight`: `false → true`
 * Added mods:
 - [CraftTweaker](https://modrinth.com/mod/crafttweaker)
 - [VisualWorkbench](https://modrinth.com/mod/visual-workbench)
