@@ -3,101 +3,108 @@ Version: NeoForge 1.21.1
 [Download Mods Link](https://drive.google.com/drive/folders/1da2X8r1abOFzkC4FKSMWQIlipmVjxn-C?usp=sharing)
 > **Note:** If you dont use modrinth, download proper Minecraft version and use mods.zip from the link to get needed mods.
 
-## Shaders
-* Complementary Shaders - Reimagined
-* FastPBR
-
-## Client Mods
-* 3D Skin Layers
-* AmbientSounds
-* Chat Animation [Smooth Chat]
-* Entity Culling
-* Iris Shaders
-* Just Enough Items (JEI)
-* Shulker Box Tooltip
-* SkinChanger
-* Sodium
-* Xaero's Minimap
-
-## Server Mods
-* [Let's Do] Beachparty
-* [Let's Do] Camping
-* [Let's Do] Farm & Charm
-* [Let's Do] Furniture
-* [Let's Do] HerbalBrews
-* [Let's Do] Lili's Lucky Lures
-* [Let's Do] Vinery
-* [UNOFFICIAL] TaCZ 1.21.1 NeoForge Port
-* Accessories
-* Another Furniture
-* Architectury API
-* Brewin' And Chewin'
-* Butchercraft
-* Caelus API
-* Carry On
-* CraftTweaker
-* Clumps
-* Common Network
-* Connected Glass
-* Create
-* Create Aeronautics
-* Create Aeronautics: Transmission & Linkage
-* Create Big Cannons
-* Create Crafts & Additions
-* Create Deco
-* Create Jetpack
-* Create Slice & Dice
-* Create: Central Kitchen
-* Create: Connected
-* Create: Copycats+
-* Create: Design n' Decor
-* Create: Diesel Generators
-* Create: Dragons Plus
-* Create: Enchantment Industry
-* Create: Interiors
-* Create: Storage [Neo/Forge]
-* Create: Tracks+
-* Create Recycling V2
-* Create: Ultimate Factory
-* Create: Aeroworks
-* CreativeCore
-* Customizable Player Models
-* Curios API
-* Diagonal Fences
-* Dynamic Trees
-* Dynamic Trees Plus
-* Etched
-* ExtraDelight
-* Farmer's Delight
-* Fusion (Connected Textures)
-* Fzzy Config
-* GraveStone Mod
-* Icarus
-* Immersive Paintings
-* Kotlin for Forge
-* Lithium
-* LDLib
-* Moonlight Lib
-* oωo (owo-lib)
-* Plushie Buddies
-* Puzzles Lib
-* Rechiseled
-* Rechiseled: Create
-* Resourceful Config
-* Ritchie's Projectile Library
-* Sable
-* Synaxis
-* Sable Schematic Tool
-* Simple Voice Chat
-* Sparkweave Engine
-* Spawn
-* Spelunkery
-* Spud's shops
-* SuperMartijn642's Config Lib
-* SuperMartijn642's Core Lib
-* Trash Cans
-* TACZ Aeronautic Compat
-* Visual Vibrance
-* VisualWorkbench
-* ViveCraft
-* ViveCraft Compat
+- [3d\-Skin\-Layers](https://modrinth.com/mod/zV5r3pPn) [1\.11\.2]
+- [Accessories](https://modrinth.com/mod/jtmvUHXj) [1\.1\.0\-beta\.53\+1\.21\.1]
+- [AmbientSounds](https://modrinth.com/mod/fM515JnW) [6\.3\.8]
+- [Another Furniture](https://modrinth.com/mod/ulloLmqG) [4\.0\.2]
+- [Architectury](https://modrinth.com/mod/lhGA9TYQ) [13\.0\.11]
+- [Balm](https://modrinth.com/mod/MBAkmtvl) [21\.0\.65]
+- [Brewin' And Chewin'](https://modrinth.com/mod/hIu9KJTT) [4\.5\.0]
+- [Butchercraft](https://modrinth.com/mod/MT2Xm0ih) [2\.6\.5]
+- [Caelus API](https://modrinth.com/mod/40FYwb4z) [7\.0\.1\+1\.21\.1]
+- [Camping](https://modrinth.com/mod/uJXTNuf0) [2\.1\.4]
+- [Carry On](https://modrinth.com/mod/joEfVgkn) [2\.2\.6]
+- [ChatAnimation](https://modrinth.com/mod/DnNYdJsx) [1\.3\.1]
+- [Clumps](https://modrinth.com/mod/Wnxd13zP) [19\.0\.0\.1]
+- [Common Networking](https://modrinth.com/mod/HIuqnQpi) [1\.0\.21\-1\.21\.1]
+- [Connected Glass](https://modrinth.com/mod/DghO0R02) [1\.1\.14]
+- [CraftTweaker](https://modrinth.com/mod/Xg35A4rS) [21\.0\.38]
+- [Create](https://modrinth.com/mod/LNytGWDc) [6\.0\.10]
+- [Create Aeronautics](https://modrinth.com/mod/oWaK0Q19) [1\.3\.1]
+- [Create Aeronautics: Transmission & Linkage](https://modrinth.com/mod/Y1dq5ioE) [0\.2\.5]
+- [Create Big Cannons](https://modrinth.com/mod/GWp4jCJj) [5\.11\.7]
+- [Create Crafts & Additions](https://modrinth.com/mod/kU1G12Nn) [1\.7\.0]
+- [Create Deco](https://modrinth.com/mod/sMvUb4Rb) [2\.1\.3]
+- [Create Diesel Generators](https://modrinth.com/mod/ZM3tt6p1) [1\.21\.1\-1\.3\.15]
+- [Create Jetpack](https://modrinth.com/mod/UbFnAd4l) [5\.2\.1]
+- [Create Recycling](https://modrinth.com/mod/I0pO61zi) [1\.0\-ALPHA]
+- [Create Slice & Dice](https://modrinth.com/mod/GmjmRQ0A) [4\.3\.3]
+- [Create Tracks\+](https://modrinth.com/mod/E8eHF2Yl) [1\.0\.6b2]
+- [Create: Aeroworks](https://modrinth.com/mod/P26k79kP) [1\.4\.2]
+- [Create: Central Kitchen](https://modrinth.com/mod/btq68HMO) [2\.6\.0]
+- [Create: Connected](https://modrinth.com/mod/Vg5TIO6d) [1\.3\.2\-mc1\.21\.1]
+- [Create: Copycats\+](https://modrinth.com/mod/UT2M39wf) [3\.0\.6\+mc\.1\.21\.1\-neoforge]
+- [Create: Dragons Plus](https://modrinth.com/mod/dzb1a5WV) [1\.11\.7b]
+- [Create: Enchantment Industry](https://modrinth.com/mod/JWGBpFUP) [2\.5\.2]
+- [Create: Interiors](https://modrinth.com/mod/r4Knci2k) [0\.6\.1]
+- [Create: Storage](https://modrinth.com/mod/h6BAXuvn) [1\.3\.4]
+- [Create: Ultimate Factory](https://modrinth.com/mod/N9QToVpw) [1\.9\.0]
+- [CreativeCore](https://modrinth.com/mod/OsZiaDHq) [2\.13\.43]
+- [Curios API](https://modrinth.com/mod/vvuO3ImH) [9\.5\.1\+1\.21\.1]
+- [Customizable Player Models](https://modrinth.com/mod/h1E7sQNL) [\-]
+- [Design n' Decor](https://modrinth.com/mod/x49wilh8) [2\.2b]
+- [Diagonal Fences](https://modrinth.com/mod/IKARgflD) [21\.1\.1]
+- [Dynamic Trees](https://modrinth.com/mod/vdjF5PL5) [1\.7\.2]
+- [Dynamic Trees Plus](https://modrinth.com/mod/qaO9Dqpu) [1\.3\.2]
+- [EntityCulling](https://modrinth.com/mod/NNAgCjsB) [1\.10\.5]
+- [Etched](https://modrinth.com/mod/zi3Fnfmc) [5\.1\.0]
+- [Extra Delight](https://modrinth.com/mod/yRrY3XII) [2\.6\.5]
+- [Farmer's Delight](https://modrinth.com/mod/R2OftAxM) [1\.3\.3]
+- [Fusion](https://modrinth.com/mod/p19vrgc2) [1\.3\.13]
+- [Fzzy Config](https://modrinth.com/mod/hYykXjDp) [0\.7\.6\+1\.21\+neoforge]
+- [Icarus](https://modrinth.com/mod/Dw7M6XKW) [4\.7\.8]
+- [Iceberg](https://modrinth.com/mod/5faXoLqX) [1\.3\.2]
+- [Immersive Paintings](https://modrinth.com/mod/6txNkua3) [0\.7\.8]
+- [Iris](https://modrinth.com/mod/YL57xq9U) [1\.8\.14\-beta\.1\+mc1\.21\.1]
+- [Item Borders](https://modrinth.com/mod/b1fMg6sH) [1\.2\.5]
+- [Just Enough Items](https://modrinth.com/mod/u6dRKJwZ) [19\.44\.0\.403]
+- [Lithium](https://modrinth.com/mod/gvQqBUqZ) [0\.15\.4\+mc1\.21\.1]
+- [LowDragLib2](https://modrinth.com/mod/B1CBVXHX) [2\.2\.36\.a]
+- [Moonlight Lib](https://modrinth.com/mod/twkfQtEc) [1\.21\.1\-3\.4\.1]
+- [NetherPortalFix](https://modrinth.com/mod/nPZr02ET) [21\.1\.1]
+- [Plushie Buddies](https://modrinth.com/mod/5hoSWfrw) [1\.0\.1\-neofroge\-1\.21\.1]
+- [Prism](https://modrinth.com/mod/1OE8wbN0) [1\.0\.11]
+- [Puzzles Lib](https://modrinth.com/mod/QAGBst4M) [21\.1\.52]
+- [Ragdoll Reactions](https://modrinth.com/mod/6awFMFjR) [0\.7\.0]
+- [Rechiseled](https://modrinth.com/mod/B0g2vT6l) [1\.2\.5]
+- [Rechiseled: Create](https://modrinth.com/mod/E6867niZ) [1\.1\.1]
+- [Resourcefulconfig](https://modrinth.com/mod/M1953qlQ) [3\.0\.11]
+- [Ritchie's Projectile Library](https://modrinth.com/mod/B3pb093D) [2\.1\.2]
+- [Sable](https://modrinth.com/mod/T9PomCSv) [2\.0\.5]
+- [Sable Photomancy](https://modrinth.com/mod/hNGBYvQN) [1\.0\.1]
+- [Sable Ragdolls](https://modrinth.com/mod/I3mWDgfy) [0\.7\.5]
+- [Sable: Ragdoll Corpse](https://modrinth.com/mod/uetGbPKW) [0\.3\.0]
+- [ShulkerBoxTooltip](https://modrinth.com/mod/2M01OLQq) [5\.1\.9\+1\.21\.1]
+- [Simple Voice Chat](https://modrinth.com/mod/9eGKb6K1) [1\.21\.1\-2\.6\.22]
+- [Skin Changer](https://modrinth.com/mod/5jVtTQGY) [0\.9\.2]
+- [Sodium](https://modrinth.com/mod/AANobbMI) [0\.8\.13\-beta\.2\+mc1\.21\.1]
+- [Sparkweave Engine](https://modrinth.com/mod/nf68xfAw) [0\.510\.0]
+- [Spawn](https://modrinth.com/mod/rex9wwpz) [4\.0\.7\-1\.21\.1]
+- [Spelunkery](https://modrinth.com/mod/krskFMfA) [1\.21\.1\-0\.4\.3]
+- [Spud's Shops](https://modrinth.com/mod/sHFbDnFN) [1\.10\.3\-neoforge\-1\.21\.1]
+- [SuperMartijn642's Config Library](https://modrinth.com/mod/LN9BxssP) [1\.1\.8]
+- [SuperMartijn642's Core Lib](https://modrinth.com/mod/rOUBggPv) [1\.1\.24]
+- [Synaxis](https://modrinth.com/mod/aJewFWOb) [1\.5\.0]
+- [TACZ Aero Compat](https://modrinth.com/mod/jgOzA8I4) [1\.8\.0]
+- [Teal Lib](https://modrinth.com/mod/rLJ1qF79) [1\.3\.teal]
+- [Timeless & Classics Guns: Zero](https://modrinth.com/mod/OypNE65K) [1\.1\.8\-hotfix\-r6]
+- [Trash Cans](https://modrinth.com/mod/4QrnfueM) [1\.1\.0]
+- [Visual Workbench](https://modrinth.com/mod/kfqD1JRw) [21\.1\.1]
+- [ViveCraft Compat](https://modrinth.com/mod/xnSuzkaS) [NONE]
+- [Vivecraft](https://modrinth.com/mod/wGoQDPN5) [1\.21\.1\-1\.3\.15]
+- [Xaero's Minimap](https://modrinth.com/mod/1bokaNcj) [26\.4\.2]
+- [YUNG's API](https://modrinth.com/mod/Ua7DFN59) [1\.21\.1\-NeoForge\-5\.1\.7]
+- [YUNG's Better End Island](https://modrinth.com/mod/2BwBOmBQ) [1\.21\.1\-NeoForge\-3\.1\.2]
+- [YUNG's Better Mineshafts](https://modrinth.com/mod/HjmxVlSr) [1\.21\.1\-NeoForge\-5\.1\.1]
+- [YUNG's Better Nether Fortresses](https://modrinth.com/mod/Z2mXHnxP) [1\.21\.1\-NeoForge\-3\.1\.5]
+- [YUNG's Better Ocean Monuments](https://modrinth.com/mod/3dT9sgt4) [1\.21\.1\-NeoForge\-4\.1\.2]
+- [YUNG's Better Strongholds](https://modrinth.com/mod/kidLKymU) [1\.21\.1\-NeoForge\-5\.1\.3]
+- [YUNG's Better Witch Huts](https://modrinth.com/mod/t5FRdP87) [1\.21\.1\-NeoForge\-4\.1\.1]
+- [\[Let's Do\] Beachparty](https://modrinth.com/mod/GyKzAh3l) [2\.1\.4]
+- [\[Let's Do\] Farm & Charm](https://modrinth.com/mod/HJetCzWo) [1\.1\.23]
+- [\[Let's Do\] Furniture](https://modrinth.com/mod/3JQDJrYW) [1\.1\.4]
+- [\[Let's Do\] HerbalBrews](https://modrinth.com/mod/Eh11TaTm) [1\.1\.3]
+- [\[Let's Do\] Lilis Lucky Lures](https://modrinth.com/mod/DMDVFZSF) [1\.1\.3]
+- [\[Let's Do\] Vinery](https://modrinth.com/mod/1DWmBJVA) [1\.5\.3]
+- kotlinforforge\-5\.12\.0\-all
+- [oωo](https://modrinth.com/mod/ccKDOlHs) [0\.12\.15\.5\-beta\.1\+1\.21]
